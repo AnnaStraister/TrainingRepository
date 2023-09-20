@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mainroot>
+<root>
+	<ABTests>
+	</ABTests>
+</root>
+<root platform="ios">
+	<ABTests>
+		<abtest id="ab_hs_christmas_lottery"
+ 			status="1"
+ 			rules='
+ 				{
+ 				"cond":[{"m3lvl":{"ge":9999}},{"cheater":false},["NOT", {"in_ab":["ab_hs_less_colors_main"]}]],
+ 				"stay_cond":{"m3lvl":{"ge":1}},
+ 				"groups":
+ 					{
+ 					"control": {"weight": 50, "params": {}},
+ 				   	"test": {"weight": 50, "params": {"AB_Lottery" : "test"}}
+ 					}
+ 				}'
+ 			origin="xml"
+ 		/>
+		<abtest id="ab_hs_cascade_snow"
+ 			status="1"
+ 			rules='
+ 				{
+ 				"cond":[{"m3lvl":{"ge":17}},{"cheater":false},["NOT", {"in_ab":["ab_hs_less_colors_main"]}]],
+ 				"stay_cond":{"m3lvl":{"ge":1}},
+ 				"groups":
+ 					{
+ 					"control": {"weight": 25, "params": {}},
+ 				   	"test": {"weight": 25, "params": {"AB_Cascade" : "test"}},
+				    "no_rm": {"weight": 25, "params": {"AB_Cascade" : "no_rm"}},
+					"chest": {"weight": 25, "params": {"AB_Cascade" : "chest"}}
+ 					}
+ 				}'
+ 			origin="xml"
+ 		/>
+		<abtest id="ab_hs_less_colors_main"/>
+		<abtest id="abDiffAmpl_holdout"/>
+		<abtest id="betaInvite411"/>
+		<abtest id="ab_hs_cascade_boarding"/>
+		<abtest id="betaInvite410"/>
+		<abtest id="ab_hs_cascade_halloween"/>
+		<abtest id="betaInvite401"/>
+		<abtest id="betaInvite400"/>
+		<abtest id="abDiffAmpl_old"/>
+		<abtest id="abIndStarsTimer"/>
+		<abtest id="abPlayable2"/>
+		<abtest id="betaInvite391"/>
+		<abtest id="betaInvite390"/>
+		<abtest id="abCascade"/>
+		<abtest id="abPNBLightning"/>
+		<abtest id="betaInvite381"/>
+		<abtest id="abLvlBonuses_cal_56"/>
+		<abtest id="betaInvite380"/>
+		<abtest id="abLvlBonuses_cal_3"/>
+		<abtest id="abLvlBonuses_cal_1"/>
+		<abtest id="abDiffAmpl_v2"/>
+		<abtest id="betaInvite371"/>
+		<abtest id="betaInvite370"/>
+		<abtest id="abPNBLightning_cal2"/>
+		<abtest id="abIncreaseCoins"/>
+		<abtest id="betaInvite361"/>
+		<abtest id="abPNBLightning_cal"/>
+		<abtest id="betaInvite360"/>
+		<abtest id="abPlayable"/>
+		<abtest id="abPlayableAll"/>
+		<abtest id="ws_cross_promo_global"/>
+		<abtest id="ws_cross_promo_global_check"/>
+		<abtest id="abNewVideoAd"/>
+		<abtest id="abDiffAmpl"/>
+		<abtest id="abPNB"/>
+		<abtest id="abDiffAmplCal"/>
+        <abtest id="abNewCrosspromo"/>
+		<abtest id="abColorsReduce"/>
+		<abtest id="abPNB_cal_1"/>
+		<abtest id="abPNB_cal" />	
+		<abtest id="abControlAA" />
+		<abtest id="ab_level_rewards" />	
+		<abtest id="ws_cross_promo" />
+		<abtest id="abOrganic_2" />
+		<abtest id="abOrganic" />
+		<abtest id="abDoubleCoins" />
+		<abtest id="abEasyCurve" />
+		<abtest id="abEasyCurve_40_v2" />
+		<abtest id="abEasyCurve_20_v2" />
+		<abtest id="abEasyCurve_40_v1" />
+		<abtest id="abEasyCurve_20_v1" />
+		<abtest id="abCnyLevels" />
+		<abtest id="abJoinLimit3" />
+		<abtest id="abChristmasLevels" />
+		<abtest id="abParrotEvent_v2" />
+		<abtest id="abParrotEvent" />
+		<abtest id="abEarlyLevels" />
+		<abtest id="abOldBank" />
+		<abtest id="abNewBank_ios" />
+		<abtest id="abPiggybank" />
+		<abtest id="abLevels3740424345" />
+		<abtest id="abLevel80_full" />
+		<abtest id="abLevel80" />
+		<abtest id="abCrossHammer" />
+		<abtest id="abFullCrossPromo120" />
+		<abtest id="abDailyBonusStart" />
+		<abtest id="abHardLevels" />
+		<abtest id="abCrossPromo110" />
+	</ABTests>
+</root>
+<root platform="android_gp">
+	<ABTests>
+		<abtest id="ab_hs_peak_complex_main_old"
+ 			status="1"
+ 			rules='
+ 				{
+ 				"cond":[{"m3lvl":{"ge":9999, "le":1000}},{"cheater":false}],
+ 				"stay_cond":{"m3lvl":{"ge":1}},
+ 				"groups":
+ 					{
+ 					"control": {"weight": 33, "params": {}},
+ 					"test_1": {"weight": 33, "params": {"AB_HardControl" : "test_1"}},
+				    "test_2": {"weight": 33, "params": {"AB_HardControl" : "test_2"}}
+ 					}
+ 				}'
+ 			origin="xml"
+ 		/>
+		<abtest id="abLvlBonuses_cal_It5"/>
+		<abtest id="abLvlBonuses_cal_It3"/>
+		<abtest id="abDiffAmpl_v4"/>
+		<abtest id="abFailReward"/>
+		<abtest id="abColMovesReduce_cal2"/>
+		<abtest id="abDiffAmpl_v3"/>
+		<abtest id="abDiffAmpl_v2"/>
+		<abtest id="abLvlBonuses_cal_78"/>
+		<abtest id="abLvlBonuses_cal_4"/>
+		<abtest id="abLvlBonuses_cal_2"/>
+		<abtest id="abPNBv3"/>
+		<abtest id="abPNBv2"/>
+		<abtest id="abPlayableAll"/>
+		<abtest id="ws_cross_promo_global"/>
+		<abtest id="abColMovesReduce"/>
+		<abtest id="abNewCrosspromo"/>
+		<abtest id="abPNB_cal_2"/>
+		<abtest id="abControlAAA" />
+		<abtest id="abEarlyCatEvent_2" />
+		<abtest id="abEarlyCatEvent" />
+		<abtest id="abMemories31500_cal" />
+		<abtest id="abCnyLevels_v2"/>
+		<abtest id="abJoinLimit4" />
+		<abtest id="abStarsCurve" />
+		<abtest id="abHalloweenEvent" />
+		<abtest id="abLevels6_cal2" />
+		<abtest id="abLevels131719_cal" />
+		<abtest id="abLevels6_cal" />
+		<abtest id="abCatEventCurve" />
+		<abtest id="abLevels64_cal" />
+		<abtest id="abLevels8586_cal" />
+		<abtest id="abLevels4850_cal" />
+		<abtest id="abLevels27_cal" />
+		<abtest id="abNewBank_and" />
+		<abtest id="abEarlyLevels_cal" />
+		<abtest id="abLevels9x9_cal" />
+		<abtest id="aa" />
+		<abtest id="abLevels3740424345_cal2" />
+		<abtest id="calibrate31" />
+		<abtest id="abLevels2428" />
+		<abtest id="abLevels3740424345_cal" />
+		<abtest id="abLevels2428_cal" />
+		<abtest id="abEasyOldNew2428" />
+	</ABTests>
+</root>
+<root platform="android_amazon">
+	<ABTests>
+		<abtest id="abPlayableAll"/>
+		<abtest id="ws_cross_promo_global"/>
+	</ABTests>
+</root>
+</mainroot>
