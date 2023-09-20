@@ -8,14 +8,14 @@
 	<Settings minRewardInterval="3600" notificationTime1="36000" notificationTime2="72000" historyDays="8"/>
 	<Calendar fromLevel="10" forcePage="Cat" >
 		<Page id="Cat" photo="DailyBonusPhoto_Cat" quest="chHall_MeetGuest">
-			<Reward day="1" type="LightningBoost" count="1"/>
-			<Reward day="2" type="MultiplyFishBoost" count="1"/>
-			<Reward day="3" type="BombAndLineBoost" count="1"/>
-			<Reward day="4" type="LightningBoost" count="1"/>
-			<Reward day="5" type="HammerBonus" count="1"/>
-			<Reward day="6" type="MultiplyFishBoost" count="1"/>
+			<Reward day="1" type="MultiplyFishBoost" count="1"/>
+			<Reward day="2" type="BombAndLineBoost" count="1"/>
+			<Reward day="3" type="LightningBoost" count="1"/>
+			<Reward day="4" type="MultiplyFishBoost" count="1"/>
+			<Reward day="5" type="BombAndLineBoost" count="1"/>
+			<Reward day="6" type="SwapBoosterBonus" count="1"/>
 			<Reward day="7" type="ProtectLives" count="60"/>
-			<Reward day="7" type="LightningBoost" count="1"/>
+			<Reward day="7" type="MultiplyFishBoost" count="1"/>
 		</Page>
 		<Page id="Fireworks" photo="DailyBonusPhoto_Fireworks">
 			<Reward day="1" type="BombAndLineBoost" count="1"/>
